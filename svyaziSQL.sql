@@ -6,8 +6,7 @@ create table if not exists artist ( -- создание таблицы
 create table if not exists album (
 	id serial primary key,
 	name varchar(40) unique not null,
-	year integer,
-	artist_id integer references artist (id)--индификатор категории для связки с artist_id
+	year integer
 );
 create table if not exists song (
 	id serial primary key,
